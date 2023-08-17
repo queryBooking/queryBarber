@@ -36,14 +36,22 @@
         document.getElementById('myModal').style.display = 'none';
       }
 
-      // Open the modal
-      function openModal2() {
-        document.getElementById('myModal2').style.display = 'block';
+      // Close the modal
+      function closeModal_promotion() {
+        document.getElementById('myModal2').style.display = 'none';
+        openModal_Payment();
       }
 
-      // Close the modal
-      function closeModal2() {
-        document.getElementById('myModal2').style.display = 'none';
+      function openModal_Payment() {
+        document.getElementById('myModal_Payment').style.display = 'block';
+      }
+
+      function closeModal_Payment() {
+        document.getElementById('myModal_Payment').style.display = 'none';
+      }
+
+      function promotion() {
+        document.getElementById('myModal2').style.display = 'block';
       }
     </script>
   </head>
@@ -60,7 +68,7 @@
         Experience convenient and efficient queuing services with us.
       </p>
       <div class="queue-boxes">
-        <div class="queue-box" onclick="openModal2()">
+        <div class="queue-box" onclick="promotion()">
           <a href="#" class="click-animation">โปรโมชั่น</a>
         </div>
         <div class="queue-box">
@@ -98,12 +106,24 @@
     </div>
 
     <div id="myModal2" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal2()">&times;</span>
+      <div class="modal-content modal-fade-in">
+        <span class="close" onclick="closeModal_promotion()">&times;</span>
         <h2>โปรโมชั่น</h2>
         <div class="img-promotion">
           <img
-            src="https://down-th.img.susercontent.com/file/147308c5d59aba98ecaa4bfb7c1e33df"
+            src="https://raw.githubusercontent.com/queryBooking/queryBarber/main/img/menu.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal_Payment" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal_Payment()">&times;</span>
+        <h2>การจ่ายเงิน</h2>
+        <div class="img-promotion">
+          <img
+            src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/5/53/Satoru_Gojo_%28Full%29.png/revision/latest?cb=20230607162650"
           />
         </div>
       </div>

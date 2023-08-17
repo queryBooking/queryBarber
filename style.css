@@ -63,6 +63,19 @@ h1 {
   color: #fff;
 }
 
+.modal-content.modal-fade-in {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -98,9 +111,14 @@ h1 {
 }
 
 .img-promotion img {
-  max-width: 250px;
+  max-width: 100%;
   height: auto;
-  display: block;
+}
+
+@media (max-width: 767px) {
+  .img-promotion {
+    text-align: center;
+  }
 }
 
 .logo {
