@@ -99,7 +99,7 @@ h1 {
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -184,4 +184,27 @@ h1 {
   border-radius: 10px;
   pointer-events: none;
   z-index: -1;
+}
+
+.accept-button {
+  display: block;
+  margin: 20px auto; /* Adjust vertical spacing as needed */
+  padding: 10px 20px;
+  background-color: #f79bb0; /* Pink color, you can adjust this */
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accept-button:hover {
+  background-color: #f49caa; /* Lighter pink color on hover */
+  transform: scale(1.05); /* Hover effect */
+}
+
+.accept-button:active {
+  background-color: #f49caa; /* Lighter pink color on press */
+  transform: scale(0.95); /* Press effect on button click */
 }

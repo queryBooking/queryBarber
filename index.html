@@ -39,7 +39,6 @@
       // Close the modal
       function closeModal_promotion() {
         document.getElementById('myModal2').style.display = 'none';
-        openModal_Payment();
       }
 
       function openModal_Payment() {
@@ -48,9 +47,10 @@
 
       function closeModal_Payment() {
         document.getElementById('myModal_Payment').style.display = 'none';
+        openModal_promotion();
       }
 
-      function promotion() {
+      function openModal_promotion() {
         document.getElementById('myModal2').style.display = 'block';
       }
     </script>
@@ -68,7 +68,7 @@
         Experience convenient and efficient queuing services with us.
       </p>
       <div class="queue-boxes">
-        <div class="queue-box" onclick="promotion()">
+        <div class="queue-box" onclick="openModal_Payment()">
           <a href="#" class="click-animation">โปรโมชั่น</a>
         </div>
         <div class="queue-box">
@@ -118,14 +118,18 @@
     </div>
 
     <div id="myModal_Payment" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal_Payment()">&times;</span>
-        <h2>การจ่ายเงิน</h2>
+      <div class="modal-content modal-fade-in">
+        <h2>การชำระเงิน</h2>
         <div class="img-promotion">
           <img
-            src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/5/53/Satoru_Gojo_%28Full%29.png/revision/latest?cb=20230607162650"
+            src="https://www.sangfi.com/wp-content/uploads/2018/03/sangfi-bank-account-400x493.png"
+            alt="Payment Image"
           />
         </div>
+        <!-- Accept button at the bottom -->
+        <button class="accept-button" onclick="closeModal_Payment()">
+          ยอมรับ
+        </button>
       </div>
     </div>
   </body>
