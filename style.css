@@ -100,3 +100,15 @@ h1 {
   height: auto;
   display: block;
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo img {
+  max-width: 200px; /* Adjust the width as needed */
+  height: auto;
+}
