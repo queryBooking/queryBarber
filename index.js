@@ -3,14 +3,14 @@ import './style.css';
 success();
 
 function success() {
-  const latitude = 16.8109577;
-  const longitude = 100.2535932;
+  const latitude = 17.2194059;
+  const longitude = 100.1993588;
   const latLong = [latitude, longitude];
 
   const map = L.map('map').setView(latLong, 13);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 25,
     attribution: '© OpenStreetMap',
   }).addTo(map);
 

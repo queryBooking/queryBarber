@@ -47,7 +47,6 @@
 
       function closeModal_Payment() {
         document.getElementById('myModal_Payment').style.display = 'none';
-        openModal_promotion();
       }
 
       function openModal_promotion() {
@@ -64,11 +63,9 @@
         />
       </div>
       <h2 class="sub-heading">ระบบจองคิวร้าน BOY'S BARBER</h2>
-      <p class="sub-heading-description">
-        Experience convenient and efficient queuing services with us.
-      </p>
+      <p class="sub-heading-description">Happiness is a good hair day.</p>
       <div class="queue-boxes">
-        <div class="queue-box" onclick="openModal_Payment()">
+        <div class="queue-box" onclick="openModal_promotion()">
           <a href="#" class="click-animation">โปรโมชั่น</a>
         </div>
         <div class="queue-box">
@@ -99,8 +96,16 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <h2>ที่อยู่ร้านค้า</h2>
-        <p>123 ถนนเมน แขวงเมือง เมือง ประเทศ</p>
+        <h2>ที่อยู่ของร้าน</h2>
+        <img
+          class="logo-modal"
+          src="https://raw.githubusercontent.com/queryBooking/queryBarber/main/img/logo-PhotoRoom.png-PhotoRoom.png"
+          alt="Logo"
+        />
+        <p class="address">
+          ร้าน บอยบาร์เบอร์ ที่อยู่ 40/2 หมู่7 ต.นาอิน อ.พิชัย จ.อุตรดิตถ์
+        </p>
+        <p class="phone">โทร.099-1394919</p>
         <div id="map"></div>
       </div>
     </div>
