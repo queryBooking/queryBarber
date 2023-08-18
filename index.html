@@ -47,6 +47,8 @@
 
       function closeModal_Payment() {
         document.getElementById('myModal_Payment').style.display = 'none';
+        window.location.href =
+          'https://docs.google.com/forms/d/e/1FAIpQLSfj-qyz5k2MaPUuLWjNx1QGnRFeOF_MbpxwrO0x2HJVjtO3qw/viewform';
       }
 
       function openModal_promotion() {
@@ -77,10 +79,7 @@
           >
         </div>
         <div class="queue-box">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfj-qyz5k2MaPUuLWjNx1QGnRFeOF_MbpxwrO0x2HJVjtO3qw/viewform"
-            target="_blank"
-            class="click-animation"
+          <a href="#" class="click-animation" onclick="openModal_Payment()"
             >ชำระมัดจำ</a
           >
         </div>

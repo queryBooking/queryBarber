@@ -15,6 +15,8 @@ function success() {
   }).addTo(map);
 
   const marker = L.marker(latLong).addTo(map);
+  const mapCenter = map.getCenter();
+  marker.setLatLng(mapCenter);
 
   const circle = L.circle(latLong, {
     color: 'red',
