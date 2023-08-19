@@ -186,11 +186,39 @@ h1 {
   z-index: -1;
 }
 
-.accept-button {
-  display: block;
-  margin: 20px auto; /* Adjust vertical spacing as needed */
+/* CSS for the button container to center-align buttons */
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Add margin to center-align vertically */
+}
+
+/* Rest of the CSS for the "Cancel" and "Accept" buttons (unchanged) */
+.cancel-button {
+  display: inline-block;
+  margin-right: 10px;
   padding: 10px 20px;
-  background-color: #f79bb0; /* Pink color, you can adjust this */
+  background-color: #999;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-button:hover {
+  background-color: #777;
+}
+
+.cancel-button:active {
+  background-color: #555;
+}
+
+.accept-button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #f79bb0;
   color: #fff;
   font-size: 16px;
   border: none;
@@ -199,14 +227,12 @@ h1 {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.accept-button:hover {
-  background-color: #f49caa; /* Lighter pink color on hover */
-  transform: scale(1.05); /* Hover effect */
+.accept-button.green-button {
+  background-color: #4caf50;
 }
 
-.accept-button:active {
-  background-color: #f49caa; /* Lighter pink color on press */
-  transform: scale(0.95); /* Press effect on button click */
+.accept-button.green-button:hover {
+  background-color: #45a049;
 }
 
 .address {

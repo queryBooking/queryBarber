@@ -130,10 +130,18 @@
             alt="Payment Image"
           />
         </div>
-        <!-- Accept button at the bottom -->
-        <button class="accept-button" onclick="closeModal_Payment()">
+        <!-- Button container to place both buttons in the middle -->
+        <button
+          class="accept-button green-button"
+          onclick="closeModal_Payment()"
+        >
           ยอมรับ
         </button>
+        <div class="button-container">
+          <button class="cancel-button" onclick="closeModal_Payment()">
+            ยกเลิก
+          </button>
+        </div>
       </div>
     </div>
   </body>
