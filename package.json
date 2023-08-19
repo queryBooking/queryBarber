@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@line/liff": "^2.22.1"
+    "@line/liff": "2.22.1",
+    "googleapis": "^126.0.0"
   }
 }
