@@ -18,12 +18,3 @@ const ekoAuth = new ClientOAuth2({
   authorizationUri: AUTH_URI,
   redirectUri: REDIRECT_URL,
 });
-
-ekoAuth.credentials.getToken().then(function (user) {
-  console.log(user); //=> { accessToken: '...', tokenType: 'bearer', ... }
-});
-
-/*const OAuth2 = google.auth.OAuth2;
-
-const oauth2Client = new OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
-*/
