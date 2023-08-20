@@ -10,4 +10,4 @@ const REFRESH_TOKEN =
 
 const OAuth2 = google.auth.OAuth2;
 
-const oauth2Client = new ClientOAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
+const oauth2Client = new OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
