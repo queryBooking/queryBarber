@@ -1,5 +1,4 @@
-const { google } = require('googleapis');
-
+import google from 'googleapis';
 import ClientOAuth2 from 'client-oauth2';
 
 const CLIENT_ID =
@@ -20,7 +19,10 @@ const ekoAuth = new ClientOAuth2({
   redirectUri: REDIRECT_URL,
 });
 
-const drive = google.drive({ version: 'v3', auth: ekoAuth.accessToken });
+ekoAuth.credentials.getToken().then(function (user) {
+  console.log(user); //=> { accessToken: '...', tokenType: 'bearer', ... }
+});
+
 /*const OAuth2 = google.auth.OAuth2;
 
 const oauth2Client = new OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
