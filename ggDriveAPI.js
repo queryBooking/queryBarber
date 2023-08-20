@@ -8,4 +8,6 @@ const REDIRECT_URL = 'https://developers.google.com/oauthplayground';
 const REFRESH_TOKEN =
   '1//048qV1Zb2gmN7CgYIARAAGAQSNwF-L9IrqWB_eZPQuyOdoy9hpXgyfmTO0COPHJby1r2d9dMhXGWV9SrxddNprHYHtZbQvix67eA';
 
-//const oauth2Client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL );
+const OAuth2 = google.auth.OAuth2;
+
+const oauth2Client = new ClientOAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);

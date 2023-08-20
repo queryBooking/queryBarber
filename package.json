@@ -4,13 +4,14 @@
   "private": true,
   "dependencies": {
     "@line/liff": "2.22.1",
-    "events": "^3.3.0",
+    "client-oauth2": "^4.3.3",
+    "events": "3.3.0",
     "google-auth-library": "9.0.0",
     "googleapis": "126.0.0",
-    "http": "^0.0.0",
-    "https": "^1.0.0",
-    "net": "^1.0.2",
-    "querystring": "^0.2.1",
-    "tls": "^0.0.1"
+    "http": "0.0.0",
+    "https": "1.0.0",
+    "net": "1.0.2",
+    "querystring": "0.2.1",
+    "tls": "0.0.1"
   }
 }
